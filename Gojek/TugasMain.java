@@ -5,12 +5,7 @@ import java.util.Scanner;
 public class TugasMain {
 
     static boolean cek(int kend){
-        if (kend == 1 || kend == 2){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return kend == 1 || kend == 2;
     }
 
     public static void main(String[] args) {
