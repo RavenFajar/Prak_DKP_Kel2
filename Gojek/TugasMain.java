@@ -108,6 +108,7 @@ public class TugasMain {
             }
 
             System.out.print("Apakah anda ingin melakukan perjalanan lainnya ?");
+            System.out.println("");
             pilihan = input.nextInt();
         } while (pilihan == 1);
         }
