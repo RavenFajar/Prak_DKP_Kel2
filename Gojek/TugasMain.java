@@ -15,7 +15,7 @@ public class TugasMain {
 
         if (kend == 1) {
             if (jarak < 10) {
-                hp = 5000;
+                hp = 2000;
                 ht = hitung(jarak);
                 h = hp + ht;
                 System.out.print("Harga : ");
@@ -27,13 +27,14 @@ public class TugasMain {
                 System.out.print("Harga : ");
                 System.out.println(h);
             } else if (jarak >= 20 && jarak < 30) {
-                hp = 15000;
+                hp = 18000;
                 ht = hitung(jarak);
                 h = ht + hp;
                 System.out.print("Harga : ");
                 System.out.println(h);
             } else {
-                System.out.println("jarak terlalu jauh");
+                System.out.println("Jarak terlalu jauh. Silahkan menggunakan pilihan Mobil");
+                System.out.println("");
             }
         } else if (kend == 2) {
             if (jarak < 10) {
@@ -49,13 +50,13 @@ public class TugasMain {
                 System.out.print("Harga : ");
                 System.out.println(h);
             } else if (jarak >= 25 && jarak < 40) {
-                hp = 22000;
+                hp = 26000;
                 ht = hitung(jarak);
                 h = ht + hp;
                 System.out.print("Harga : ");
                 System.out.println(h);
             } else if (jarak >= 40 && jarak < 50) {
-                hp = 27000;
+                hp = 30000;
                 ht = hitung(jarak);
                 h = ht + hp;
                 System.out.print("Harga : ");
@@ -95,6 +96,7 @@ public class TugasMain {
             System.out.println("Pilih kendaraan yang anda inginkan");
             System.out.println("1. Motor");
             System.out.println("2. Mobil");
+            System.out.println("Masukan 1 atau 2");
             kend = input.nextInt();
             boolean hasilcek = cek(kend);
             if (hasilcek){
@@ -104,11 +106,11 @@ public class TugasMain {
                 perjalanan.harga_perjalanan(kend,jarak);
             }
             else{
-                System.out.println("pilihan tidak tersedia");
+                System.out.println("Pilihan tidak tersedia");
             }
 
-            System.out.print("Apakah anda ingin melakukan perjalanan lainnya ?");
-            System.out.println("");
+            System.out.println("Apakah anda ingin melakukan perjalanan lainnya ?");
+            System.out.println("yes = 1 / no = 0");
             pilihan = input.nextInt();
         } while (pilihan == 1);
         }
